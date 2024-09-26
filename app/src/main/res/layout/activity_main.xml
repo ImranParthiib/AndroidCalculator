@@ -4,7 +4,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:background="@color/material_dynamic_secondary10"
     android:orientation="vertical"
     android:weightSum="8"
@@ -13,11 +12,12 @@
     <!-- Display Text -->
     <TextView
         android:id="@+id/secondaryTextView"
+        android:text=""
+        android:gravity="end"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1.5"
         android:background="@color/material_dynamic_secondary90"
-        android:gravity="end"
         android:textSize="50dp" />
 
     <TextView
@@ -45,6 +45,7 @@
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:background="#4CAF50"
+            android:onClick="clearFunction"
             android:text="AC"
             android:textSize="30dp" />
 
@@ -54,6 +55,7 @@
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:background="#E91E63"
+            android:onClick="deleteFunction"
             android:text="DEL"
             android:textSize="30dp" />
 
@@ -63,6 +65,7 @@
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:background="#C900BCD4"
+            android:onClick="operationFunction"
             android:text="%"
             android:textSize="30dp" />
 
@@ -72,6 +75,7 @@
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:background="#C900BCD4"
+            android:onClick="operationFunction"
             android:text="/"
             android:textSize="30dp" />
     </LinearLayout>
@@ -118,6 +122,7 @@
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:background="#C900BCD4"
+            android:onClick="operationFunction"
             android:text="*"
             android:textSize="30dp" />
     </LinearLayout>
@@ -158,12 +163,12 @@
             android:textSize="30dp" />
 
         <Button
-            android:id="@+id/multiply"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:background="#C900BCD4"
+            android:onClick="operationFunction"
             android:text="-"
             android:textSize="30dp" />
     </LinearLayout>
@@ -209,6 +214,7 @@
             android:layout_margin="4dp"
             android:layout_weight="1"
             android:background="#C900BCD4"
+            android:onClick="operationFunction"
             android:text="+"
             android:textSize="30dp" />
     </LinearLayout>
@@ -241,10 +247,12 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="operationFunction"
             android:text="√"
             android:textSize="30dp" />
 
         <Button
+            android:onClick="calculateFunction"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="4dp"
