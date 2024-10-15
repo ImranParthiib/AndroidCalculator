@@ -2,6 +2,8 @@
 
 FXCalculator is a sleek, intuitive calculator app for Android built using Java and Android Studio. 🎨 Designed with a user-friendly interface, this app handles basic arithmetic operations efficiently! 🧮
 
+![Overview](Overview/image.png)
+
 ## ✨ Features:
 
 - Simple and clean UI for easy navigation 🧑‍💻
